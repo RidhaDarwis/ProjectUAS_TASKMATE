@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#023E73"
+    tools:context=".Pengaturan">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#153B5D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/LogoAplikasi"
+            android:layout_width="59dp"
+            android:layout_height="53dp"
+            android:src="@drawable/logo_aplikasi_transparant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="56dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.993"
+            app:layout_constraintStart_toEndOf="@+id/LogoAplikasi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo_menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/judul_Pengaturan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PENGATURAN"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.075"/>
+
+    <!--TEMA-->
+    <ImageButton
+        android:id="@+id/logoTema"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30sp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/logo_theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_Pengaturan"
+        app:layout_constraintVertical_bias="0.085" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="70sp"
+        android:backgroundTint="#00000000"
+        android:text="Tema"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@+id/judul_Pengaturan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.085"/>
+
+    <!--NOTIFIKASI-->
+    <ImageButton
+        android:id="@+id/logoNotifikasi"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30sp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/logo_notifikasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoTema"
+        app:layout_constraintVertical_bias="0.095" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="70sp"
+        android:backgroundTint="#00000000"
+        android:text="Notifikasi"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@+id/logoTema"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.095"/>
+
+    <!--BANTUAN-->
+    <ImageButton
+        android:id="@+id/logoBantuan"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30sp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/logo_bantuan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoNotifikasi"
+        app:layout_constraintVertical_bias="0.095" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30sp"
+        android:layout_marginStart="70sp"
+        android:backgroundTint="#00000000"
+        android:text="Bantuan"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@+id/logoNotifikasi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.095"/>
+
+    <Button
+        android:id="@+id/buttonKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="KEMBALI"
+        android:textColor="#023E73"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBantuan"
+        app:layout_constraintVertical_bias="0.8"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
